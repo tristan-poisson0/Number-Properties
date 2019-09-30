@@ -1,0 +1,19 @@
+Scanner in = new Scanner(System.in);
+  System.out.print("Enter number: ");
+  float number = in.nextFloat();
+  if (number > 0) {
+    System.out.print("Number is positive");
+    if (number < 1)
+      System.out.println(" and small");
+    else if (number > 1_000_000)
+      System.out.println(" and large");
+  }
+  else if (number < 0) {
+    System.out.print("Number is negative");
+    if (number > -1)
+      System.out.println(" and small");
+    else if (number < -1_000_000)
+      System.out.println(" and large");
+  }
+  else
+    System.out.println("Number = 0");
